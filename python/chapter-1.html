@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.1-Getting Started</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+<style>
+    body{
+        margin: auto 2%;
+    }
+
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid text-bg-secondary">
+          <a class="navbar-brand" href="../index.html">Akhtar Programming Class</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <ul class="nav nav-tabs">
+                <li class="nav-item">
+                  <a class="nav-link active text-success" aria-current="page" href="./pythonindex.html">Python Home</a>
+                </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link text-bg-warning" href="https://bmc.link/programmin7" target="_blank">Support Me</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-bg-danger" href="./pythonindex.html" target="_blank">Previous Lecture</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-bg-success" href="#">Next Lecture</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-bg-info" href="./topic-list.html" target="_blank">Topic List</a>
+                </li>
+              </ul>
+              <!-- <a class="nav-link disabled">Disabled</a> -->
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <h1 class="text-bg-info">
+        Chapter 1: Getting started with Python Language
+      </h1>
+      <hr>
+      <h5 class="text-decoration-underline">Python 3.x
+        Version Release Date:</h5>
+        <p class="text-bg-success">3.8 &nbsp;&nbsp;2020-04-29 <br>
+            3.7 &nbsp;&nbsp;2018-06-27<br>
+            3.6 &nbsp;&nbsp;2016-12-23<br>
+            3.5 &nbsp;&nbsp;2015-09-13<br>
+            3.4 &nbsp;&nbsp;2014-03-17<br>
+            3.3 &nbsp;&nbsp;2012-09-29<br>
+            3.2 &nbsp;&nbsp;2011-02-20<br>
+            3.1 &nbsp;&nbsp;2009-06-26<br>
+            3.0 &nbsp;&nbsp;2008-12-03
+        </p>
+        <h5 class="text-decoration-underline">Python 2.x
+            Version Release Date:</h5>
+            <p class="text-bg-success">
+                2.7 &nbsp;&nbsp;2010-07-03<br>
+2.6 &nbsp;&nbsp;2008-10-02<br>
+2.5 &nbsp;&nbsp;2006-09-19<br>
+2.4 &nbsp;&nbsp;2004-11-30<br>
+2.3 &nbsp;&nbsp;2003-07-29<br>
+2.2 &nbsp;&nbsp;2001-12-21<br>
+2.1 &nbsp;&nbsp;2001-04-15<br>
+2.0 &nbsp;&nbsp;2000-10-16<br>
+            </p>
+<h1 class="text-bg-warning">Section 1.1: Getting Started</h1>
+<p class="text-bg-success">
+    Python is a widely used high-level programming language for general-purpose programming, created by Guido van
+Rossum and first released in 1991. Python features a dynamic type system and automatic memory management
+and supports multiple programming paradigms, including object-oriented, imperative, functional programming,
+and procedural styles. It has a large and comprehensive standard library.
+<br><br>
+Two major versions of Python are currently in active use:
+<ul>
+    <li>Python 3.x is the current version and is under active development.</li>
+    <li>Python 2.x is the legacy version and will receive only security updates until 2020. No new features will be
+        implemented. Note that many projects still use Python 2, although migrating to Python 3 is getting easier.</li>
+</ul>
+</p>
+
+<h6 class="text-bg-danger">Verify if Python is installed</h6>
+<p class="text-bg-info">
+    To confirm that Python was installed correctly, you can verify that by running the following command in your
+favorite terminal (If you are using Windows OS, you need to add path of python to the environment variable before
+using it in command prompt): <br> <br>
+$ python --version <br>
+Python 3.x Version ≥ 3.0 <br> <br>
+If you have Python 3 installed, and it is your default version (see Troubleshooting for more details) you should see <br>
+something like <this:br></this:br>
+$ python --version <br>
+Python 3.6.0 <br>
+Python 2.x Version ≤ 2.7 <br> <br>
+If you have Python 2 installed, and it is your default version (see Troubleshooting for more details) you should see
+something like this: <br>
+$ python --version <br>
+Python 2.7.13 <br> <br>
+If you have installed Python 3, but $ python --version outputs a Python 2 version, you also have Python 2
+installed. This is often the case on MacOS, and many Linux distributions. Use $ python3 instead to explicitly use the
+Python 3 interpreter.
+</p>
+<h4 class="text-bg-secondary">Hello, World in Python using IDLE</h4>
+<p>IDLE is a simple editor for Python, that comes bundled with Python.</p>
+<h4 class="text-bg-dark">How to create Hello, World program in IDLE</h4>
+
+<ul>
+    <li>
+        Open IDLE on your system of choice.
+        <ul>
+            <li>In older versions of Windows, it can be found at All Programs under the Windows menu.</li>
+            <li>In Windows 8+, search for IDLE or find it in the apps that are present in your system.</li>
+            <li>On Unix-based (including Mac) systems you can open it from the shell by typing $ idle
+                python_file.py.</li>
+        </ul>
+    </li>
+    <li>It will open a shell with options along the top.</li>
+</ul>
+<p><strong>In the shell, there is a prompt of three right angle brackets:</strong></p>
+<p class="text-bg-secondary">>>></p>
+<p>Now write the following code in the prompt:</p>
+<p class="text-bg-secondary">>>> print("Hello, World")</p>
+<p>Hit Enter</p>
+<p class="text-bg-secondary">>>> print("Hello, World") <br>
+    Hello, World</p>
+    <h6><strong>Hello World Python file</strong></h6>
+    <p>
+        Create a new file hello.py that contains the following line: <br>   
+Python 3.x Version ≥ 3.0
+    </p>
+    <p class="text-bg-secondary">
+        print('Hello, World')</p>
+        <p>
+        <strong>Python 2.x Version ≥ 2.6</strong></p>
+
+        <p>You can use the Python 3 print function in Python 2 with the following import statement:</p>
+<p class="text-bg-secondary">from p__future__ import print_function </p>
+<p>Python 2 has a number of functionalities that can be optionally imported from Python 3 using the __future__
+module, as discussed here. <br><br>
+Python 2.x Version ≤ 2.7    <br><br>
+If using Python 2, you may also type the line below. Note that this is not valid in Python 3 and thus not
+recommended because it reduces cross-version code compatibility.</p>
+<p class="text-bg-secondary">print 'Hello, World'</p>
+<p>
+In your terminal, navigate to the directory containing the file <tt> hello.py</tt> <br>
+Type python hello.py, then hit the Enter key. </p>
+<p class="text-bg-secondary">
+$ python hello.py <br>
+Hello, World</p>
+<p>
+You should see Hello, World printed to the console. <br> <br>
+You can also substitute hello.py with the path to your file. For example, if you have the file in your home directory
+and your user is "user" on Linux, you can type python /home/user/hello.py.
+</p>
+
+<h1 class="text-bg-success">Section 1.2: Creating variables and assigning values</h1>
+<p class="">To create a variable in Python, all you need to do is specify the variable name, and then assign a value to it. <br>
+    &lt;variable name &gt; = &lt; value &gt; <br> <br>
+    Python uses = to assign values to variables. There's no need to declare a variable in advance (or to assign a data
+    type to it), assigning a value to a variable itself declares and initializes the variable with that value. There's no way to
+    declare a variable without assigning it an initial value.</p>
+
+    <code>
+        # Integer <br>
+        a = 2<br>
+        print(a)<br>
+        # Output: 2<br>
+        # Integer <br>
+        b = 9223372036854775807<br>
+        print(b)<br>
+        # Output: 9223372036854775807<br>
+        # Floating point<br>
+        pi = 3.14<br>
+        print(pi)<br>
+        # Output: 3.14<br>
+        # String<br>
+        c = 'A'<br>
+        print(c)<br>
+        # Output: A<br>
+        # String <br>
+        name = 'John Doe'<br>
+        print(name)<br>
+        # Output: John Doe<br>
+        # Boolean <br>
+        q = True<br>
+        print(q)<br>
+        # Output: True<br>
+        # Empty value or null data type<br>
+        x = None<br>
+        print(x)<br>
+        # Output: None</code><br> <br>
+        <p>Variable assignment works from left to right. So the following will give you an syntax error.</p>
+        <code>
+            0 = x <br>
+=> Output: SyntaxError: can't assign to literal
+        </code> <br><br>
+        <p>You can not use python's keywords as a valid variable name. You can see the list of keyword by:</p>
+        <p class="text-bg-secondary">import keyword <br>
+            print(keyword.kwlist)</p>
+            <h6 class="text-bg-danger">Rules for variable naming:</h6>
+            <ol>
+                <li>Variables names must start with a letter or an underscore. <br> <br>
+<code>
+    x = True # valid <br>
+    _y = True # valid <br>
+    9x = False # starts with numeral<br>
+   => SyntaxError: invalid syntax <br>
+    $y = False # starts with symbol<br>
+   => SyntaxError: invalid syntax<br>
+</code>
+</li> <br>
+<li>The remainder of your variable name may consist of letters, numbers and underscores. <br> <br>
+    <code>has_0_in_it = "Still Valid"</code>
+</li> <br> <br>
+<li>Names are case sensitive. <br> <br>
+    <code>x = 9 <br>
+        y = X*5 <br>
+        =>NameError: name 'X' is not defined <br>
+    </code>
+</li>
+            </ol>
+
+<p class="text-bg-success">Even though there's no need to specify a data type when declaring a variable in Python, while allocating the
+    necessary area in memory for the variable, the Python interpreter automatically picks the most suitable built-in
+    type for it:</p>
+    <code>
+        a = 2 <br>
+print(type(a)) <br>
+# Output: &lt;type 'int'&gt; <br>
+b = 9223372036854775807 <br>
+print(type(b)) <br>
+# Output: &lt;type 'int'&gt; <br>
+pi = 3.14 <br>
+print(type(pi)) <br>
+# Output: &lt;type 'float'&gt; <br>
+c = 'A' <br>
+print(type(c)) <br>
+# Output: &lt;type 'str'&gt; <br>
+name = 'John Doe' <br>
+print(type(name)) <br>
+# Output: &lt;type 'str'&gt; <br>
+q = True <br>
+print(type(q)) <br>
+
+# Output: &lt;type 'bool'&gt; <br>
+x = None <br>
+print(type(x)) <br>
+# Output: &lt;type 'NoneType'&gt; <br>
+    </code> <br> <br>
+    <p class="text-bg-info">
+        Now you know the basics of assignment, let's get this subtlety about assignment in python out of the way. <br> <br>
+When you use = to do an assignment operation, what's on the left of = is a <strong> name </strong>for the <strong> object</strong> on the right. Finally,
+what = does is assign the <strong> reference</strong> of the object on the right to the <strong> name</strong> on the left. <br> <br>
+That is:
+    </p>
+            <code>
+                a_name = an_object # "a_name" is now a name for the reference to the object "an_object"
+            </code>
+            <br><br>
+            <p>So, from many assignment examples above, if we pick pi = 3.14, then pi is a name (not the name, since an object
+                can have multiple names) for the object 3.14. If you don't understand something below, come back to this point
+                and read this again! Also, you can take a look at this for a better understanding.
+                You can assign multiple values to multiple variables in one line. Note that there must be the same number of
+                arguments on the right and left sides of the = operator:</p>
+
+                <br> <br>
+                <code>
+                    a, b, c = 1, 2, 3 <br>
+print(a, b, c) <br>
+# Output: 1 2 3 <br>
+a, b, c = 1, 2 <br>
+=> Traceback (most recent call last): <br>
+=> File "name.py", line N, in &lt;module&gt; <br>
+=> a, b, c = 1, 2 <br>
+=> ValueError: need more than 2 values to unpack
+a, b = 1, 2, 3 <br>
+=> Traceback (most recent call last): <br>
+=> File "name.py", line N, in &lt;module&gt; <br>
+=> a, b = 1, 2, 3 <br>
+=> ValueError: too many values to unpack <br>
+                </code>
+
+                <br> <br>
+
+               <p> The error in last example can be obviated by assigning remaining values to equal number of arbitrary variables.
+                This dummy variable can have any name, but it is conventional to use the underscore (_) for assigning unwanted
+                values:</p>
+                <code>
+                a, b, _ = 1, 2, 3 <br>
+                print(a, b) <br>
+                # Output: 1, 2 <br>
+            </code>
+                <p>Note that the number of _ and number of remaining values must be equal. Otherwise 'too many values to unpack
+                error' is thrown as above:</p>
+                <code>
+                a, b, _ = 1,2,3,4 <br>
+                =>Traceback (most recent call last): <br>
+                =>File "name.py", line N, in &lt;module&gt; <br>
+                =>a, b, _ = 1,2,3,4 <br>
+                =>ValueError: too many values to unpack (expected 3)
+            </code> <br><br>
+            <p>
+                You can also assign a single value to several variables simultaneously.</p>
+<code>
+                a = b = c = 1 <br>
+                print(a, b, c) <br>
+                # Output: 1 1 1 <br>
+            </code>
+            <br>
+            <p>
+                When using such cascading assignment, it is important to note that all three variables a, b and c refer to the same
+                object in memory, an int object with the value of 1. In other words, a, b and c are three different names given to the
+                same int object. Assigning a different object to one of them afterwards doesn't change the others, just as expected:</p>
+                <code>
+                a = b = c = 1 # all three names a, b and c refer to same int object with value 1 <br>
+                print(a, b, c)
+                # Output: 1 1 1 <br>
+                b = 2 # b now refers to another int object, one with a value of 2 <br>
+                print(a, b, c) <br>
+                # Output: 1 2 1 # so output is as expected.</code>
+                <br> <br>
+                <p>The above is also true for mutable types (like list, dict, etc.) just as it is true for immutable types (like int, string,
+                tuple, etc.):</p>
+                <code>
+                x = y = [7, 8, 9] # x and y refer to the same list object just created, [7, 8, 9] <br>
+                x = [13, 8, 9] # x now refers to a different list object just created, [13, 8, 9] <br>
+                print(y) # y still refers to the list it was first assigned
+                # Output: [7, 8, 9]
+            </code>
+            <br> <br>
+            <p>
+                So far so good. Things are a bit different when it comes to modifying the object (in contrast to assigning the name to
+                a different object, which we did above) when the cascading assignment is used for mutable types. Take a look
+                below, and you will see it first hand: </p>
+                <code>
+                x = y = [7, 8, 9] # x and y are two different names for the same list object just created, [7,
+                8, 9] <br>
+                x[0] = 13 # we are updating the value of the list [7, 8, 9] through one of its names, x
+                in this case <br>
+                print(y) # printing the value of the list using its other name <br>
+                # Output: [13, 8, 9] # hence, naturally the change is reflected
+            </code>
+            <br>
+            <br>
+               <p> Nested lists are also valid in python. This means that a list can contain another list as an element. </p>
+               <code>
+                x = [1, 2, [3, 4, 5], 6, 7] #  this is nested list
+                print x[2] <br>
+                # Output: [3, 4, 5]
+                print x[2][1] <br>
+                # Output: 4 </code>
+               <p> Lastly, variables in Python do not have to stay the same type as which they were first defined -- you can simply use
+                = to assign a new value to a variable, even if that value is of a different type. </p>
+                <code>
+                a = 2 <br>
+                print(a) <br>
+                # Output: 2 <br>
+                a = "New value" <br>
+                print(a) <br>
+                # Output: New value </code>
+                <br> <br>
+               <p> If this bothers you, think about the fact that what's on the left of = is just a name for an object. First you call the int
+                object with value 2 a, then you change your mind and decide to give the name a to a string object, having value
+                'New value'. Simple, right? </p>
+                <code>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
